@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 MAINTAINER Alexandros Georgiou <alex.georgiou@gmail.com>
 LABEL description="Container for building and running a GoldCoin wallet" Version="1.0"

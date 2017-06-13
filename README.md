@@ -2,19 +2,20 @@
 
 **goldcoin-chest** is a Dockerfile for running the GoldCoin (GLD) wallet in a container.
 
-Based on an *Ubuntu 14.04* image, it follows the build instructions given at https://www.gldtalk.org/index.php?topic=3764.0
+Based on an *Ubuntu 16.04* image, it follows the build instructions given at https://www.gldtalk.org/index.php?topic=3764.0
 
 ## Building
+
+The `goldcoin.conf`file contains the following settings. You might want to edit it before building.
+
+    rpcuser=goldcoinrpc
+    rpcpassword=6Szr2m4gppqU86SfnDnJmcz92svUsiQm1xRPCSpzPsi3
+    rpcallowip=*
 
 To build the Docker image, do:
 
     docker build -t alex-georgiou/goldcoind .
 
-The image contains this `goldcoin.conf`. You might want to edit it before building.
-
-    rpcuser=goldcoinrpc
-    rpcpassword=6Szr2m4gppqU86SfnDnJmcz92svUsiQm1xRPCSpzPsi3
-    rpcallowip=*
 
 ## Running
 
