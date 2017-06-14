@@ -31,4 +31,4 @@ COPY goldcoin.conf /root/.goldcoin/
 
 WORKDIR /goldcoin/src
 
-CMD goldcoind
+CMD ./goldcoind
